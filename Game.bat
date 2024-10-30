@@ -1,0 +1,3 @@
+make
+NumberGuessingGame.exe
+pause

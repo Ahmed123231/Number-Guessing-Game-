@@ -1,0 +1,12 @@
+output: main.o Guessing_Game.o
+	g++ main.o Guessing_Game.o -o NumberGuessingGame
+	
+main.o: main.cpp Guessing_Game.h
+	g++ -c main.cpp
+	
+Guessing_Game.o: Guessing_Game.cpp Guessing_Game.h
+	g++ -c Guessing_Game.cpp 
+	
+clean:
+	rm *.o NumberGuessingGame
+	
